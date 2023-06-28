@@ -4,12 +4,10 @@
     <title>DreamTree Events</title>
     <style>
       :root {
-        --color-rose: #d9bdba;
-        --color-teal-dark: #315559;
-        --color-teal-light: #3a848c;
-        --color-bg: var(--color-rose);
-        --color-primary: var(--color-teal-dark);
-        --color-secondary: var(--color-teal-light);
+        --color-orange-muted: #d9694133;
+        --color-blue: #04738c;
+        --color-bg: var(--color-orange-muted);
+        --color-primary: var(--color-blue);
       }
 
       * {
@@ -18,7 +16,7 @@
 
       html {
         font-size: 16px;
-        font-family: serif;
+        font-family: sans-serif;
       }
 
       html,
@@ -35,11 +33,11 @@
         background-color: var(--color-bg);
       }
 
-      h1 {
-        margin: 0 0 1rem;
-        padding: 0;
-        font-size: 5rem;
-        color: var(--color-primary);
+      .logo {
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        max-width: 80%;
       }
 
       .main {
@@ -49,9 +47,9 @@
 
       .contact {
         display: inline-flex;
-        font-size: 2rem;
+        font-size: 1.8rem;
         pointer-events: none;
-        color: var(--color-secondary);
+        color: var(--color-primary);
       }
 
       .contact__inbox::after {
@@ -60,13 +58,13 @@
 
       .contact__tld {
         direction: rtl;
-        unicode-bidi: isolate-override;;
+        unicode-bidi: isolate-override;
       }
     </style>
   </head>
   <body>
     <main class="main">
-      <h1>DreamTree Events</h1>
+      <img class="logo" src="logo.png">
       <section class="contact">
         <span class="contact__inbox">sophie</span>
         <span class="contact__domain">dreamtree</span>
